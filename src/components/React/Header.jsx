@@ -18,8 +18,8 @@ const Header = ({idioma, cambiarIdioma}) => {
                     <h1 className="2xl:text-3xl font-bold">{idioma == false ? "Soy Cristián" : "I'm Cristián"}</h1>
                     <h1 className="2xl:text-3xl font-bold">{idioma == false ? "Programador Front-end" : "Front-end Developer"}</h1>
 
-                    <p className="pt-5 text-xs">{idioma == false ? "Aqui esta mi hoja de vida," : "Here is my resume,"}</p>
-                    <p className="text-xs">{idioma == false ? "si quieres ponerte en contacto conmigo escríbeme a:" : "if you would like to contact me, please write to: "} <a className="hover:text-[#F2350C] hover:underline transition duration-300 ease-in-out" href="mailto:criscami562@gmail.com">criscami562@gmail.com</a></p>
+                    <p className="pt-5 ">{idioma == false ? "Aqui esta mi hoja de vida," : "Here is my resume,"}</p>
+                    <p className="">{idioma == false ? "si quieres ponerte en contacto conmigo escríbeme a:" : "if you would like to contact me, please write to: "} <a className="hover:text-[#F2350C] hover:underline transition duration-300 ease-in-out" href="mailto:criscami562@gmail.com">criscami562@gmail.com</a></p>
                     <a className="relative block mt-10 h-12 w-32 text-center p-3 bg-[#F2350C] rounded-md" href="/CVCRISTIANRINCON.pdf" target="_blank">{idioma == false ? "Descargar CV" : "Download CV"}</a>
                     <div className="mt-8 flex gap-8">
                         <a target="_blank" href="https://github.com/DibierRoot">
