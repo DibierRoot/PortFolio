@@ -19,7 +19,7 @@ const Welcome = () => {
 
 			<Header client:visible cambiarIdioma={cambiarIdioma} idioma={idioma}/>
 
-			<main className="flex flex-col gap-32 pt-16 mx-5 2xl:mx-20">
+			<main className="flex flex-col pt-16 mx-5 md:mx-10 xl:mx-20">
 
 				<div className="cursor-default">
 					
@@ -32,7 +32,7 @@ const Welcome = () => {
 				</div>
 			</main>
 
-			<footer className="flex justify-center mt-28 text-gray-500 cursor-default">
+			<footer className="flex text-xs md:text-base justify-center mt-28 text-gray-500 cursor-default">
 				<p>{idioma == false ? "Derechos Reservados. Cristián Rincón" : "All Rights Reserved. Cristián Rincón"}</p>
 			</footer>
 		</div>
