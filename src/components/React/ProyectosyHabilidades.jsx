@@ -20,9 +20,9 @@ const ProyectosyHabilidades = ({idioma}) => {
 								<div className="flex flex-col gap-3">
 									<p className="flex justify-center items-center pt-5">{idioma == false ? "Elaborado con:" : "Made with:"}</p>
 									<div className="flex gap-8 justify-center">
-										<img className="w-8 md:w-12 h-8 md:h-12" src="/ReactIcon.svg" alt="ReactIcon" />
-										<img className="w-8 md:w-12 h-8 md:h-12" src="/PHPIcon.svg" alt="PHPIcon" />
-										<img className="w-8 md:w-12 h-8 md:h-12" src="/MySQLIcon.svg" alt="MySQLIcon" />
+										<img className="w-10 md:w-12 h-10 md:h-12" src="/ReactIcon.svg" alt="ReactIcon" />
+										<img className="w-10 md:w-12 h-10 md:h-12" src="/PHPIcon.svg" alt="PHPIcon" />
+										<img className="w-10 md:w-12 h-10 md:h-12" src="/MySQLIcon.svg" alt="MySQLIcon" />
 									</div>
 								</div>
 							</item>
@@ -36,8 +36,8 @@ const ProyectosyHabilidades = ({idioma}) => {
 								<div className="flex flex-col gap-3">
 									<p className="flex justify-center items-center pt-5">{idioma == false ? "Elaborado con:" : "Made with:"}</p>
 									<div className="flex gap-8 justify-center">
-										<img className="w-8 md:w-12 h-8 md:h-12" src="/AstroIcon.svg" alt="AstroIcon" />
-										<img className="w-8 md:w-12 h-8 md:h-12" src="/ReactIcon.svg" alt="ReactIcon" />
+										<img className="w-10 md:w-12 h-10 md:h-12" src="/AstroIcon.svg" alt="AstroIcon" />
+										<img className="w-10 md:w-12 h-10 md:h-12" src="/ReactIcon.svg" alt="ReactIcon" />
 									</div>
 								</div>
 							</item>
@@ -52,9 +52,9 @@ const ProyectosyHabilidades = ({idioma}) => {
 						<h1 className="text-lg xl:text-xl 2xl:text-2xl transform duration-300 ease-in-out text-[#F2350C] font-semibold flex justify-center items-center">{idioma == false ? "Lenguajes" : "Languages"}</h1>
 
 						<div className="flex gap-5 xl:gap-8 justify-center">
-							<img className="w-8 md:w-12 h-8 md:h-12" src="/HTML5Icon.svg" alt="HTMLIcon" />
-							<img className="w-8 md:w-12 h-8 md:h-12" src="/CSS3Icon.svg" alt="CSSIcon" />
-							<img className="w-8 md:w-12 h-8 md:h-12" src="/JSIcon.svg" alt="JSIcon" />
+							<img className="w-10 md:w-12 h-10 md:h-12" src="/HTML5Icon.svg" alt="HTMLIcon" />
+							<img className="w-10 md:w-12 h-10 md:h-12" src="/CSS3Icon.svg" alt="CSSIcon" />
+							<img className="w-10 md:w-12 h-10 md:h-12" src="/JSIcon.svg" alt="JSIcon" />
 						</div>
 					</div>
 
@@ -62,8 +62,8 @@ const ProyectosyHabilidades = ({idioma}) => {
 						<h1 className="text-lg xl:text-xl 2xl:text-2xl transform duration-300 ease-in-out text-[#F2350C] font-semibold flex justify-center items-center">{idioma == false ? "Frameworks y Librerias" : "Frameworks and Libraries"}</h1>
 
 						<div className="flex gap-5 xl:gap-8 justify-center">
-							<img className="w-8 md:w-12 h-8 md:h-12" src="/ReactIcon.svg" alt="ReactIcon" />
-							<img className="w-8 md:w-12 h-8 md:h-12" src="/TailwindIcon.svg" alt="TailwindIcon" />
+							<img className="w-10 md:w-12 h-10 md:h-12" src="/ReactIcon.svg" alt="ReactIcon" />
+							<img className="w-10 md:w-12 h-10 md:h-12" src="/TailwindIcon.svg" alt="TailwindIcon" />
 						</div>
 					</div>
 
@@ -71,10 +71,10 @@ const ProyectosyHabilidades = ({idioma}) => {
 						<h1 className="text-lg xl:text-xl 2xl:text-2xl transform duration-300 ease-in-out text-[#F2350C] font-semibold flex justify-center items-center">{idioma == false ? "Herramientas y Tecnologías" : "Tools and Technologies"}</h1>
 
 						<div className="flex gap-5 xl:gap-8 justify-center">
-							<img className="w-8 md:w-12 h-8 md:h-12" src="/GitIcon.svg" alt="GitIcon" />
-							<img className="w-8 md:w-12 h-8 md:h-12" src="/GitHubIcon.svg" alt="GitHubIcon" />
-							<img className="w-8 md:w-12 h-8 md:h-12" src="/ViteIcon.svg" alt="ViteIcon" />
-							<img className="w-8 md:w-12 h-8 md:h-12" src="/NpmIcon.svg" alt="NpmIcon" />
+							<img className="w-10 md:w-12 h-10 md:h-12" src="/GitIcon.svg" alt="GitIcon" />
+							<img className="w-10 md:w-12 h-10 md:h-12" src="/GitHubIcon.svg" alt="GitHubIcon" />
+							<img className="w-10 md:w-12 h-10 md:h-12" src="/ViteIcon.svg" alt="ViteIcon" />
+							<img className="w-10 md:w-12 h-10 md:h-12" src="/NpmIcon.svg" alt="NpmIcon" />
 						</div>
 					</div>
 				</div>
