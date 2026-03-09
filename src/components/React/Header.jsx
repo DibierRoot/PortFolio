@@ -2,17 +2,17 @@ const Header = ({idioma, cambiarIdioma}) => {
 
     return (
         <header className="relative">
-            <nav className="px-3 md:px-10 py-2 md:py-5 lg:py-8 shadow-md cursor-default">
-                <h3 className="absolute text-xs md:text-lg">Cristián Rincón | PortFolio</h3>
+            <nav className="px-3 md:px-10 py-3 md:py-5 lg:py-8 shadow-md cursor-default">
+                <h3 className="absolute text-sm md:text-lg">Cristián Rincón | PortFolio</h3>
                 <div className="flex justify-end gap-1 2xl:gap-5 text-xs md:text-lg font-bold">
                     <span onClick={cambiarIdioma} className="font-semibold hover:text-[#F2350C] transition duration-300 ease-in-out hover:cursor-pointer">{idioma == false ? "Español" : "English"}</span>
                 </div>
             </nav>
             <div className="flex justify-between 2xl:gap-36 pt-10 mx-5 md:mx-10 xl:mx-20">
                 <div className="flex flex-col">
-                    <h1 className="text-base md:text-xl lg:text-2xl xl:text-3xl font-bold">{idioma == false ? "Hola," : "Hi,"}</h1>
-                    <h1 className="text-base md:text-xl lg:text-2xl xl:text-3xl font-bold">{idioma == false ? "Soy Cristián" : "I'm Cristián"}</h1>
-                    <h1 className="text-base md:text-xl lg:text-2xl xl:text-3xl font-bold">{idioma == false ? "Programador Front-end" : "Front-end Developer"}</h1>
+                    <h1 className={`text-base md:text-xl lg:text-2xl xl:text-3xl font-bold transform duration-300 ease-in-out ${idioma ? "" : ""}`}>{idioma == false ? "Hola," : "Hi,"}</h1>
+                    <h1 className={`text-base md:text-xl lg:text-2xl xl:text-3xl font-bold transform duration-300 ease-in-out ${idioma ? "" : ""}`}>{idioma == false ? "Soy Cristián" : "I'm Cristián"}</h1>
+                    <h1 className={`text-base md:text-xl lg:text-2xl xl:text-3xl font-bold transform duration-300 ease-in-out ${idioma ? "" : ""}`}>{idioma == false ? "Programador Front-end" : "Front-end Developer"}</h1>
 
                     <p className="text-xs md:text-base pt-2 md:pt-5 ">{idioma == false ? "Aqui esta mi hoja de vida," : "Here is my resume,"}</p>
                     <p className="text-xs md:text-base">{idioma == false ? "si quieres ponerte en contacto conmigo escríbeme a:" : "if you would like to contact me, please write to: "} <br /> <a className="hover:text-[#F2350C] hover:underline transition duration-300 ease-in-out" href="mailto:criscami562@gmail.com">criscami562@gmail.com</a></p>

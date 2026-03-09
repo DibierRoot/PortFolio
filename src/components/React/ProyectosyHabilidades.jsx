@@ -11,8 +11,8 @@ const ProyectosyHabilidades = ({idioma}) => {
 					<div className="flex justify-center items-center">
 						<section className="flex flex-col xl:flex-row gap-20">
 							<item>
-								<img className="w-56 md:w-96 xl:w-80 h-56 md:h-96 xl:h-80" src="/PortadaOcoboShop.png" alt="" />
-								<div className="text-center shadow-2xl p-5 w-56 md:w-96 xl:w-80">
+								<img className="w-56 md:w-96 h-56 md:h-96" src="/PortadaOcoboShop.png" alt="" />
+								<div className="text-center shadow-2xl p-5 w-56 md:w-96">
 									<h2 className="font-bold text-base md:text-lg">OcoboShop</h2>
 									<p className="text-xs md:text-base">{idioma == false ? "Tienda online de Merch de Ocoboo" : "Ocobo merch online store"}</p>
 									<a className="flex justify-center mt-3" href="https://github.com/DibierRoot/OcoboShop" target="_blank"><img width="35" height="35" src="/GitHubIcon.svg" alt="GitHubIcon" /></a>
@@ -27,8 +27,8 @@ const ProyectosyHabilidades = ({idioma}) => {
 								</div>
 							</item>
 							<item>
-								<img className="w-56 md:w-96 xl:w-80 h-56 md:h-96 xl:h-80" src="/PortadaPortFolio.png" alt="" />
-								<div className="text-center shadow-2xl p-5 w-56 md:w-96 xl:w-80">
+								<img className="w-56 md:w-96 h-56 md:h-96" src="/PortadaPortFolio.png" alt="" />
+								<div className="text-center shadow-2xl p-5 w-56 md:w-96">
 									<h2 className="font-bold text-lg">PortFolio</h2>
 									<p className="text-xs md:text-base">{idioma == false ? "PortFolio Personal" : "Personal PortFolio"}</p>
 									<a className="flex justify-center mt-3" href="https://github.com/DibierRoot/PortFolio" target="_blank"><img width="35" height="35" src="/GitHubIcon.svg" alt="GitHubIcon" /></a>
