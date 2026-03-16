@@ -15,7 +15,10 @@ const ProyectosyHabilidades = ({idioma}) => {
 								<div className="text-center shadow-2xl p-5 w-56 md:w-96">
 									<h2 className="font-bold text-base md:text-lg">OcoboShop</h2>
 									<p className="text-xs md:text-base">{idioma == false ? "Tienda online de Merch de Ocoboo" : "Ocobo merch online store"}</p>
-									<a className="flex justify-center mt-3" href="https://github.com/DibierRoot/OcoboShop" target="_blank"><img width="35" height="35" src="/GitHubIcon.svg" alt="GitHubIcon" /></a>
+									<div className="flex justify-center mt-3 gap-5">
+										<a href="https://ocobo-shop.vercel.app/" target="_blank"><img width="35" height="35" src="/webIcon.png" alt="GitHubIcon" /></a>
+										<a href="https://github.com/DibierRoot/OcoboShop" target="_blank"><img width="35" height="35" src="/GitHubIcon.svg" alt="GitHubIcon" /></a>
+									</div>
 								</div>
 								<div className="flex flex-col gap-3">
 									<p className="flex justify-center items-center pt-5">{idioma == false ? "Elaborado con:" : "Made with:"}</p>
@@ -31,7 +34,10 @@ const ProyectosyHabilidades = ({idioma}) => {
 								<div className="text-center shadow-2xl p-5 w-56 md:w-96">
 									<h2 className="font-bold text-lg">PortFolio</h2>
 									<p className="text-xs md:text-base">{idioma == false ? "PortFolio Personal" : "Personal PortFolio"}</p>
-									<a className="flex justify-center mt-3" href="https://github.com/DibierRoot/PortFolio" target="_blank"><img width="35" height="35" src="/GitHubIcon.svg" alt="GitHubIcon" /></a>
+									<div className="flex justify-center mt-3 gap-5">
+										<a href="https://port-folio-eosin-zeta.vercel.app/" target="_blank"><img width="35" height="35" src="/webIcon.png" alt="GitHubIcon" /></a>
+										<a href="https://github.com/DibierRoot/PortFolio" target="_blank"><img width="35" height="35" src="/GitHubIcon.svg" alt="GitHubIcon" /></a>
+									</div>
 								</div>
 								<div className="flex flex-col gap-3">
 									<p className="flex justify-center items-center pt-5">{idioma == false ? "Elaborado con:" : "Made with:"}</p>
