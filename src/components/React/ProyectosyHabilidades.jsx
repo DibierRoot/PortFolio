@@ -5,7 +5,7 @@ const ProyectosyHabilidades = ({idioma}) => {
     return (
         <motion.div initial={{opacity: 0, y: 60}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.6}} viewport={{once: true}}>
             <div className="flex flex-col 2xl:flex-row gap-16 xl:gap-56 pt-5 2xl:pt-44 justify-center">
-				<div className="relative flex flex-col gap-10 cursor-default">
+				<div id="proyectos" className="relative flex flex-col gap-10 cursor-default">
 					<h1 className="pt-16 pb-12 text-lg md:text-xl xl:text-2xl 2xl:text-3xl transform duration-300 ease-in-out text-[#F2350C] underline underline-offset-8 decoration-4 font-bold flex justify-center items-center">{idioma == false ? "Proyectos" : "Proyects"}</h1>
 
 					<div className="flex justify-center items-center">
@@ -44,7 +44,7 @@ const ProyectosyHabilidades = ({idioma}) => {
 						</section>
 					</div>
 				</div>
-				<div className="relative flex flex-col gap-10 cursor-default">
+				<div id="habilidades" className="relative flex flex-col gap-10 cursor-default">
 					<h1 className="pt-16 xl:pb-12 text-lg md:text-xl xl:text-2xl 2xl:text-3xl transform duration-300 ease-in-out text-[#F2350C] underline underline-offset-8 decoration-4 font-bold flex justify-center items-center">{idioma == false ? "Habilidades" : "Skills"}</h1>
 					<h2 className="text-center text-sm md:text-base font-semibold">{idioma == false ? "Mis Conocimientos, Frameworks, Librerias, herramientas y tecnologías" : "My knowledge, frameworks, libraries, tools and technologies"}</h2>
 						

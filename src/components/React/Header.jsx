@@ -1,11 +1,34 @@
 const Header = ({idioma, cambiarIdioma}) => {
 
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
     return (
         <header className="relative">
             <nav className="px-3 md:px-10 py-3 md:py-5 lg:py-8 shadow-md cursor-default">
-                <h3 className="absolute text-sm md:text-lg">Cristián Rincón | PortFolio</h3>
-                <div className="flex justify-end gap-1 2xl:gap-5 text-xs md:text-lg font-bold">
-                    <span onClick={cambiarIdioma} className="font-semibold hover:text-[#F2350C] transition duration-300 ease-in-out hover:cursor-pointer">{idioma == false ? "Español" : "English"}</span>
+                <div className="flex justify-between items-center">
+                    <h3 className="text-sm md:text-lg">Cristián Rincón | PortFolio</h3>
+                    <div className="flex gap-3 md:gap-5 items-center text-xs md:text-base">
+                        <a onClick={() => scrollToSection('sobreMi')} className="hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer">
+                            {idioma == false ? "Sobre Mi" : "About"}
+                        </a>
+                        <a onClick={() => scrollToSection('proyectos')} className="hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer">
+                            {idioma == false ? "Proyectos" : "Projects"}
+                        </a>
+                        <a onClick={() => scrollToSection('habilidades')} className="hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer">
+                            {idioma == false ? "Habilidades" : "Skills"}
+                        </a>
+                        <a onClick={() => scrollToSection('contacto')} className="hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer">
+                            {idioma == false ? "Contacto" : "Contact"}
+                        </a>
+                        <span onClick={cambiarIdioma} className="font-semibold hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer">
+                            {idioma == false ? "Español" : "English"}
+                        </span>
+                    </div>
                 </div>
             </nav>
             <div className="flex justify-between 2xl:gap-36 pt-10 mx-5 md:mx-10 xl:mx-20">

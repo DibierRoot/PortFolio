@@ -1,6 +1,6 @@
 const SobreMi = ({idioma}) => {
     return (
-        <div>
+        <div id="sobreMi">
 			<div className="flex justify-center gap-8">
                 <img className="w-12 md:w-16 xl:w-20 h-12 md:h-16 xl:h-20" src="/HTML5Icon.svg" alt="HTMLIcon" />
                 <img className="w-12 md:w-16 xl:w-20 h-12 md:h-16 xl:h-20" src="/CSS3Icon.svg" alt="CSSIcon" />

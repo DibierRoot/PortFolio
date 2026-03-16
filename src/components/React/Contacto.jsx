@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Contacto = ({idioma}) => {
     return (
         <motion.div initial={{opacity: 0, y: 60}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.6}} viewport={{once: true}}>
-            <div className="flex flex-col pt-16 xl:pt-44 justify-center items-center">
+            <div id="contacto" className="flex flex-col pt-16 xl:pt-44 justify-center items-center">
                 <h1 className="pt-16 pb-5 xl:pb-12 text-lg md:text-xl xl:text-2xl 2xl:text-3xl transform duration-300 ease-in-out text-[#F2350C] underline underline-offset-8 decoration-4 font-bold flex justify-center items-center">{idioma == false ? "Contacto" : "Contact"}</h1>
                 <div className="mt-16 flex gap-10 xl:gap-24">
                     <a target="_blank" href="https://www.linkedin.com/in/cristi%C3%A1n-camilo-rinc%C3%B3n-lozano-76b55230a">
