@@ -4,7 +4,7 @@ const ProyectosyHabilidades = ({idioma}) => {
 
     return (
         <motion.div initial={{opacity: 0, y: 60}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.6}} viewport={{once: true}}>
-            <div className="flex flex-col 2xl:flex-row gap-16 xl:gap-56 pt-5 2xl:pt-44 justify-center">
+            <div className="flex flex-col gap-16 xl:gap-56 pt-5 2xl:pt-44 justify-center">
 				<div id="proyectos" className="relative flex flex-col gap-10 cursor-default">
 					<h1 className="pt-16 pb-12 text-lg md:text-xl xl:text-2xl 2xl:text-3xl transform duration-300 ease-in-out text-[#F2350C] underline underline-offset-8 decoration-4 font-bold flex justify-center items-center">{idioma == false ? "Proyectos" : "Proyects"}</h1>
 
@@ -44,6 +44,24 @@ const ProyectosyHabilidades = ({idioma}) => {
 									<div className="flex gap-8 justify-center">
 										<img className="w-10 md:w-12 h-10 md:h-12" src="/AstroIcon.svg" alt="AstroIcon" />
 										<img className="w-10 md:w-12 h-10 md:h-12" src="/ReactIcon.svg" alt="ReactIcon" />
+									</div>
+								</div>
+							</item>
+							<item>
+								<img className="w-56 md:w-96 h-56 md:h-96" src="/PortadaOcoboLinks.png" alt="" />
+								<div className="text-center shadow-2xl p-5 w-56 md:w-96">
+									<h2 className="font-bold text-lg">OcoboLinks</h2>
+									<p className="text-xs md:text-base">{idioma == false ? "Todos los links de Ocobo" : "All Ocobo links"}</p>
+									<div className="flex justify-center mt-3 gap-5">
+										<a href="https://links-ocobo.vercel.app/" target="_blank"><img width="35" height="35" src="/webIcon.png" alt="GitHubIcon" /></a>
+										<a href="https://github.com/DibierRoot/LinkOcobo" target="_blank"><img width="35" height="35" src="/GitHubIcon.svg" alt="GitHubIcon" /></a>
+									</div>
+								</div>
+								<div className="flex flex-col gap-3">
+									<p className="flex justify-center items-center pt-5">{idioma == false ? "Elaborado con:" : "Made with:"}</p>
+									<div className="flex gap-8 justify-center">
+										<img className="w-10 md:w-12 h-10 md:h-12" src="/ReactIcon.svg" alt="ReactIcon" />
+										<img className="w-10 md:w-12 h-10 md:h-12" src="/JSIcon.svg" alt="JSIcon" />
 									</div>
 								</div>
 							</item>
