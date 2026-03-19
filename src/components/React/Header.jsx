@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 const Header = ({idioma, cambiarIdioma}) => {
 
     const scrollToSection = (sectionId) => {
@@ -7,12 +9,30 @@ const Header = ({idioma, cambiarIdioma}) => {
         }
     };
 
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleLinkClick = (sectionId) => {
+        scrollToSection(sectionId);
+        setMenuOpen(false);
+    };
+
     return (
         <header className="relative">
             <nav className="px-3 md:px-10 py-3 md:py-5 lg:py-8 shadow-md cursor-default">
                 <div className="flex justify-between items-center">
-                    <h3 className="text-sm md:text-lg">Cristián Rincón | PortFolio</h3>
-                    <div className="flex gap-3 md:gap-5 items-center text-xs md:text-base">
+                    <h3 className="text-xs md:text-lg">Cristián Rincón | PortFolio</h3>
+                    <button 
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        className="md:hidden p-2 focus:outline-none transition-transform duration-300"
+                        aria-label="Toggle menu"
+                    >
+                        <div className="w-5 h-5 flex flex-col gap-1 -mb-2">
+                            <span className={`block h-0.5 w-full bg-current transform transition-all duration-300 origin-center ${menuOpen ? 'rotate-[45deg] translate-y-1' : ''}`}></span>
+                            <span className={`block h-0.5 w-full bg-current transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}></span>
+                            <span className={`block h-0.5 w-full bg-current transform transition-all duration-300 origin-center ${menuOpen ? '-rotate-[45deg] -translate-y-2' : ''}`}></span>
+                        </div>
+                    </button>
+                    <div className="hidden md:flex gap-5 items-center text-base">
                         <a onClick={() => scrollToSection('sobreMi')} className="hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer">
                             {idioma == false ? "Sobre Mi" : "About"}
                         </a>
@@ -26,6 +46,25 @@ const Header = ({idioma, cambiarIdioma}) => {
                             {idioma == false ? "Contacto" : "Contact"}
                         </a>
                         <span onClick={cambiarIdioma} className="font-semibold hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer">
+                            {idioma == false ? "Español" : "English"}
+                        </span>
+                    </div>
+                </div>
+                <div className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${menuOpen ? 'max-h-64 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
+                    <div className="flex flex-col gap-3 text-base pb-4 border-t border-gray-200 pt-4">
+                        <a onClick={() => handleLinkClick('sobreMi')} className="hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer py-2 transform hover:translate-x-2">
+                            {idioma == false ? "Sobre Mi" : "About"}
+                        </a>
+                        <a onClick={() => handleLinkClick('proyectos')} className="hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer py-2 transform hover:translate-x-2">
+                            {idioma == false ? "Proyectos" : "Projects"}
+                        </a>
+                        <a onClick={() => handleLinkClick('habilidades')} className="hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer py-2 transform hover:translate-x-2">
+                            {idioma == false ? "Habilidades" : "Skills"}
+                        </a>
+                        <a onClick={() => handleLinkClick('contacto')} className="hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer py-2 transform hover:translate-x-2">
+                            {idioma == false ? "Contacto" : "Contact"}
+                        </a>
+                        <span onClick={() => { cambiarIdioma(); setMenuOpen(false); }} className="font-semibold hover:text-[#F2350C] transition duration-300 ease-in-out cursor-pointer py-2 transform hover:translate-x-2">
                             {idioma == false ? "Español" : "English"}
                         </span>
                     </div>
