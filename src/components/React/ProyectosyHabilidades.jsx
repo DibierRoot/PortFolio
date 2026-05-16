@@ -17,7 +17,7 @@ const ProyectosyHabilidades = ({idioma}) => {
 									<p className="text-xs md:text-base">{idioma == false ? "Tienda online de Merch de Ocoboo" : "Ocobo merch online store"}</p>
 									<div className="flex justify-center mt-3 gap-5">
 										<a href="https://ocobo-shop.vercel.app/" target="_blank"><img width="35" height="35" src="/webIcon.png" alt="GitHubIcon" /></a>
-										<a href="https://github.com/DibierRoot/OcoboShop" target="_blank"><img width="35" height="35" src="/GitHubIcon.svg" alt="GitHubIcon" /></a>
+										{/* <a href="https://github.com/DibierRoot/OcoboShop" target="_blank"><img width="35" height="35" src="/GitHubIcon.svg" alt="GitHubIcon" /></a> */}
 									</div>
 								</div>
 								<div className="flex flex-col gap-3">
